@@ -1,0 +1,7 @@
+Name: Prenagen
+Author: Omeoo
+Website: www.omeoo.com
+Description: This Theme is used for Prenagen WebSite.
+Version: 1.0
+BaseTheme: TheThemeMachine
+Tags: Prenagen, Omeoo
