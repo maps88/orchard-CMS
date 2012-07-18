@@ -12,7 +12,9 @@
     
     SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
     Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
-    Style.Include("/Themes/prenagen/view/site.css");
+    Style.Include("/Themes/prenagen/Styles/site.css");
+    Script.Include("/Themes/prenagen/Scripts/dotcontrol.js");
+    Style.Include("/Themes/prenagen/Styles/style-slide.css");
 
     /* Some useful shortcuts or settings
     ***************************************************************/
@@ -76,9 +78,8 @@
 }
             else {
             <ul>
-            <div>@Zone(Model.Login)</div>
-            <li>|</li>
-            <li id="register">register</li>
+            <li>@Zone(Model.Login)</li>
+            <li id="register">register </li>
             </ul>
              }
 		</div>
@@ -136,6 +137,7 @@
         </div>
         }
     </div>
+	<div id="separator"></div>
     @if (Model.AsideSecond != null) {
     <aside id="aside-second" class="aside-second">
         @Zone(Model.AsideSecond)

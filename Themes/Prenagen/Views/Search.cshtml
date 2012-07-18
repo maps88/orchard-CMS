@@ -1,4 +1,10 @@
-﻿@using (Html.BeginForm("index", "search", new { area = "Orchard.Search" }, FormMethod.Get, new { @class = "navbar-search nav-collapse pull-right" }))
+﻿@using Orchard.Search.ViewModels;
+@{
+    Style.Require("Search");
+}
+
+@using (Html.BeginForm("index", "search", new { area = "Orchard.Search" }, FormMethod.Get, new { @class = "navbar-search nav-collapse pull-right" }))
 {
-    <input type="text" name="q" id="q" class="search-query" placeholder="Search" />
+    <input type="text" name="q" id="q" class="search-query" placeholder="Search" style="font-family: desyrel;background:none; width: 200px; height: 15px; border: none;margin-top: 3px;" />
+    <button type="submit"  style="border:none; background: transparent; float:right; margin-top: -24px; padding: 0; width:30px; height:25px; !IMPORTANT"></button>
 }

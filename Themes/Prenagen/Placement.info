@@ -14,4 +14,70 @@
     <Place Parts_Common_Metadata="-"/>
   </Match>
 -->
+
+    <Match ContentType="TanyaAhlinyaQA">
+        <Match DisplayType="Detail">
+            <Place Parts_Title="Nowhere"
+                   Parts_Common_Metadata="Nowhere"
+                   Parts_Common_Body="Content"
+                   Fields_Common_Text ="Content:after"
+                   Parts_Comments="Footer"/>
+         </Match>
+        <Match DisplayType="Summary">
+            <Place Parts_Title="Nowhere"
+                   Parts_Common_Body_Summary ="Content:before"
+                   Fields_Common_Text ="Nowhere"
+                   Parts_Common_Metadata_Summary="Nowhere"
+                   Parts_Comments_Count="Nowhere"/>
+        </Match>
+    </Match>
+    <Match ContentType="ArtikelTerkini">
+        <Match DisplayType="Detail">
+            <Place Parts_Title="Header"
+                   Parts_Common_Metadata="Header:after"
+                   Parts_Common_Body="Content"
+                   Fields_MediaPicker="Nowhere"
+                   Parts_Comments="Footer"/>
+         </Match>
+        <Match DisplayType="Summary">
+            <Place Fields_MediaPicker="Header:before"
+                   Parts_Title_Summary="Content:before"
+                   Parts_Common_Body_Summary ="Content:after"
+                   Parts_Common_Metadata_Summary="Nowhere"
+                   Parts_Comments_Count="Nowhere"/>
+        </Match>
+    </Match>
+    <Match ContentType="InfoTerkini">
+        <Match DisplayType="Detail">
+            <Place Parts_Title="Nowhere"
+                   Parts_Common_Metadata="Nowhere"
+                   Parts_Common_Body="Content"
+                   Fields_Common_Text ="Content:after"
+                   Parts_Comments="Nowhere" />
+         </Match>
+        <Match DisplayType="Summary">
+            <Place Fields_MediaPicker="Header:before"
+                   Parts_Common_Body_Summary ="Content:before"
+                   Fields_Common_Text ="Nowhere"
+                   Parts_Common_Metadata_Summary="Nowhere"
+                   Parts_Comments_Count="Nowhere"/>
+        </Match>
+    </Match>
+     <Match ContentType="dir">
+        <Match DisplayType="Detail">
+            <Place Parts_Title="Nowhere"
+                   Parts_Common_Metadata="Nowhere"
+                   Parts_Common_Body="Content"
+                   Fields_Common_Text ="Content:after"
+                   Parts_Comments="Footer"/>
+         </Match>
+        <Match DisplayType="Summary">
+            <Place Fields_MediaPicker="Header:before"
+                   Parts_Common_Body_Summary ="Content:before"
+                   Fields_Common_Text ="Nowhere"
+                   Parts_Common_Metadata_Summary="Nowhere"
+                   Parts_Comments_Count="Nowhere"/>
+        </Match>
+    </Match>
+
 </Placement>
