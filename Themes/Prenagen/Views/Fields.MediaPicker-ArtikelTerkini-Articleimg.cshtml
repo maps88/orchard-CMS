@@ -1,0 +1,19 @@
+﻿@using Orchard.Utility.Extensions;
+
+@{
+    string name = Model.ContentField.DisplayName;  
+}
+<img src="@Href(Model.ContentField.Url)" style="width: 150px; height:100px; margin:20px 0 10px;" alt="@name"/>
+
+@* Other available properties *@
+@* 
+    Alternate Text: @Model.ContentField.AlternateText
+    Class: @Model.ContentField.Class
+    Style: @Model.ContentField.Style
+    Alignment @Model.ContentField.Alignment
+    Width: @Model.ContentField.Width
+    Height: @Model.ContentField.Height
+    
+    You can also display an image using this example, and add the attributes you need:
+    <img src="@Href(Model.ContentField.Url)" />
+*@

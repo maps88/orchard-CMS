@@ -1,0 +1,14 @@
+﻿@{
+    IEnumerable<object> items = Model.ContentItems;
+    Model.ContentItems.Classes.Add("content-items");
+    Model.ContentItems.Classes.Add("list-items");
+}
+
+ <div class="article-header">
+			<div class="article-header-warp">
+			    <div class="article-logo" style="background-position: -41px 0"></div>
+				<div class="article-tags">Tanya Ahlinya</div>
+				<div class="article-detail">Menjawab pertanyaan Bunda</div>
+			</div>
+</div>
+@Display(items)

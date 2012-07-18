@@ -1,0 +1,31 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null) {
+        Layout.Title = Model.Title;
+    }
+    
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<article class="content-item @contentTypeClassName cfx">
+     <div class="article-header">
+			<div class="article-header-warp">
+			    <div class="article-logo" style="background-position: 0 0"></div>
+				<div class="article-tags">Artikel & Tips</div>
+				<div class="article-detail">Yang Perlu Bunda Tahu</div>
+				</div>
+        </div>
+    <header style="float: left; width: 150px;">
+        @Display(Model.Header)
+        @if (Model.Meta != null) {
+        <div class="metadata">
+            @Display(Model.Meta)
+        </div>
+        }
+    </header>
+    @Display(Model.Content)
+    @if(Model.Footer != null) {
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+    }
+</article>

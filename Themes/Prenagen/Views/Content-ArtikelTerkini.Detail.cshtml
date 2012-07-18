@@ -1,0 +1,62 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null) {
+        Layout.Title = Model.Title;
+    }
+    
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<article class="content-item @contentTypeClassName">
+    <header>
+	 <div class="article-header">
+		<div class="article-header-warp">
+			<div class="article-logo" style="background-position: -41px 0"></div>
+			<div class="article-tags">tanya ahlinya</div>
+			<div class="article-detail">menjawab pertanyaan bunda</div>
+		</div>
+	</div>
+	
+        <div id="title-artikel-details">@Display(Model.Header)</div>
+        @if (Model.Meta != null) {
+        <div class="metadata">
+            @Display(Model.Meta)
+        </div>
+        }
+    </header>
+    @Display(Model.Content)
+    <div style="clear: both;">
+		<div class="navigation-button">
+			<div class="previous-button">< Previous post</div>
+			<div class="title-article-prev"> | Nutrisi Ibu Hamil Awal Bulan</div>
+			<div class="next-button">Next post ></div>
+			<div class="title-article-next"> DHA Penting Untuk Anak |</div>
+		</div>
+		<div class="article-header">
+			<div class="article-header-warp">
+				<div class="article-tags">artikel & diskusi terkait</div>
+				<div class="article-detail">cari tahu lebih lanjut</div>
+			</div>
+		</div>
+		<div class="artikel-terkait">
+			<div class="artikel-terkait-list">
+				<img src="../themes/prenagen/content/images/img_article.jpg" class="image-artikel-list"/>
+				<div class="title-artikel-terkait">Cerita Ibu Dalam Menyusui Anaknya Yang Baru Lahir</div>
+			</div>
+			<div class="artikel-terkait-list">
+				<img src="../themes/prenagen/content/images/img_article.jpg" class="image-artikel-list"/>
+				<div class="title-artikel-terkait">Cerita Ibu Dalam Menyusui Anaknya Yang Baru Lahir</div>
+			</div>
+			<div class="artikel-terkait-list">
+				<img src="../themes/prenagen/content/images/img_article.jpg" class="image-artikel-list"/>
+				<div class="title-artikel-terkait">Cerita Ibu Dalam Menyusui Anaknya Yang Baru Lahir</div>
+			</div>
+		</div>
+		
+		
+	</div>
+    @if(Model.Footer != null) {
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+    }
+</article>

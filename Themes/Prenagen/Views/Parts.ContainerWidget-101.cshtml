@@ -1,0 +1,25 @@
+﻿@using Orchard.ContentManagement;
+@{
+    IEnumerable<object> items = Model.ContentItems;
+    Model.ContentItems.Classes.Add("content-items");
+    Model.ContentItems.Classes.Add("list-items");
+}
+
+ <div class="article-header">
+			<div class="article-header-warp">
+			    <div class="article-logo" style="background-position: 0 0"></div>
+				<div class="article-tags">Artikel & Tips</div>
+				<div class="article-detail">Yang Perlu Bunda Tahu</div>
+			</div>
+</div>
+<div id="article-warp" class="cfx">
+    <ul class="content-items" class="cfx">
+    @foreach (dynamic post in items) {
+        string title = post.Title;
+        ContentItem item = post.ContentItem;
+        <li class="article-content">
+            @Display(post)
+        </li>
+    }
+    </ul>
+</div>
